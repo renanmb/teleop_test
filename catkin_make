@@ -1,0 +1,61 @@
+rmb@rmb-desktop:~/workspace1$ catkin_make
+Base path: /home/rmb/workspace1
+Source space: /home/rmb/workspace1/src
+Build space: /home/rmb/workspace1/build
+Devel space: /home/rmb/workspace1/devel
+Install space: /home/rmb/workspace1/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/rmb/workspace1/build"
+####
+####
+#### Running command: "make -j4 -l4" in "/home/rmb/workspace1/build"
+####
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _beginner_tutorials_generate_messages_check_deps_Num
+[  0%] Built target _beginner_tutorials_generate_messages_check_deps_AddTwoInts
+[  0%] Built target std_msgs_generate_messages_py
+[  6%] Built target teleop_twist_joy
+[  9%] Building CXX object i2c_imu-master/CMakeFiles/i2c_imu_node.dir/src/i2c_imu_node.cpp.o
+[ 12%] Building CXX object imu_book_tutorial/CMakeFiles/imu_example.dir/src/imu_example.cpp.o
+[ 19%] Built target turtle_teleop_joy
+[ 25%] Built target beginner_tutorials_generate_messages_cpp
+[ 32%] Built target beginner_tutorials_generate_messages_lisp
+[ 41%] Built target beginner_tutorials_generate_messages_eus
+[ 48%] Built target beginner_tutorials_generate_messages_nodejs
+[ 61%] Built target beginner_tutorials_generate_messages_py
+Scanning dependencies of target teleop_twist_joy_node
+[ 61%] Built target beginner_tutorials_gencpp
+[ 64%] Building CXX object beginner_tutorials/CMakeFiles/listener.dir/src/listener.cpp.o
+[ 67%] Building CXX object teleop_twist_joy/CMakeFiles/teleop_twist_joy_node.dir/src/teleop_node.cpp.o
+/home/rmb/workspace1/src/beginner_tutorials/src/listener.cpp:2:6: error: stray ‘#’ in program
+   29 #include "std_msgs/String.h"
+      ^
+/home/rmb/workspace1/src/imu_book_tutorial/src/imu_example.cpp:2:32: fatal error: geometry_msgs/twist.h: No such file or directory
+compilation terminated.
+imu_book_tutorial/CMakeFiles/imu_example.dir/build.make:62: recipe for target 'imu_book_tutorial/CMakeFiles/imu_example.dir/src/imu_example.cpp.o' failed
+make[2]: *** [imu_book_tutorial/CMakeFiles/imu_example.dir/src/imu_example.cpp.o] Error 1
+CMakeFiles/Makefile2:3725: recipe for target 'imu_book_tutorial/CMakeFiles/imu_example.dir/all' failed
+make[1]: *** [imu_book_tutorial/CMakeFiles/imu_example.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/rmb/workspace1/src/beginner_tutorials/src/listener.cpp:2:3: error: expected unqualified-id before numeric constant
+   29 #include "std_msgs/String.h"
+   ^
+beginner_tutorials/CMakeFiles/listener.dir/build.make:62: recipe for target 'beginner_tutorials/CMakeFiles/listener.dir/src/listener.cpp.o' failed
+make[2]: *** [beginner_tutorials/CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+CMakeFiles/Makefile2:577: recipe for target 'beginner_tutorials/CMakeFiles/listener.dir/all' failed
+make[1]: *** [beginner_tutorials/CMakeFiles/listener.dir/all] Error 2
+[ 70%] Linking CXX executable /home/rmb/workspace1/devel/lib/teleop_twist_joy/teleop_node
+/home/rmb/workspace1/src/i2c_imu-master/src/i2c_imu_node.cpp:25:22: fatal error: RTIMULib.h: No such file or directory
+compilation terminated.
+i2c_imu-master/CMakeFiles/i2c_imu_node.dir/build.make:62: recipe for target 'i2c_imu-master/CMakeFiles/i2c_imu_node.dir/src/i2c_imu_node.cpp.o' failed
+make[2]: *** [i2c_imu-master/CMakeFiles/i2c_imu_node.dir/src/i2c_imu_node.cpp.o] Error 1
+CMakeFiles/Makefile2:3020: recipe for target 'i2c_imu-master/CMakeFiles/i2c_imu_node.dir/all' failed
+make[1]: *** [i2c_imu-master/CMakeFiles/i2c_imu_node.dir/all] Error 2
+[ 70%] Built target teleop_twist_joy_node
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
+Invoking "make -j4 -l4" failed
+
